@@ -23,4 +23,4 @@ Observe's les anomenades **madre2.llamame()** de les línies 36 d'ara en avant:
 - En el segon cas, s'invoca al mètode **llamame()** de la classe **Hija1** perquè ara **madre2** fa referència a un objecte de la classe **Hija1**.  
 - En el tercer cas, s'invoca al mètode **llamame()** de la classe **Hija2** perquè ara **madre2** fa referència a un objecte de la classe **Hija2**.
 
-![Exemple 4](uf8/eixida_exemple4.jpg)
+![Exemple 4](/uf8/eixida_exemple4.jpg)

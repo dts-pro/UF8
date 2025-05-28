@@ -11,7 +11,7 @@ A la classe ja existent se la denomina **superclasse**, classe base o classe par
 
 <u>Per exemple</u>, si tenim un programa que treballarà amb alumnes i professors, aquests tindran atributs comuns com el nom, DNI, adreça o telèfon. Però cadascun d'ells tindran atributs específics que no tinguen els altres. Per exemple els i les alumnes tindran el número d'expedient, el cicle i curs que cursen i les seues notes; per la seua part els i les docents tindran el codi de professor, el departament al qual pertanyen, els mòduls que imparteixen i el seu horari. Per tant, en aquest cas el millor és declarar una classe <i>Persona</i> amb els atributs comuns (Nom, DNI, Adreça, Telèfon) i dos sub-classes <i>Alumne</i> i <i>Professor</i> que hereten de Persona (a més de tindre els seus propis atributs). Es important remarcar que Alumne i Professor també heretaran tots els mètodes de Persona.
 
-![Esquema d'una superclasse i subclasses](uf8/esquema_superclasse.png)
+![Esquema d'una superclasse i subclasses](/uf8/esquema_superclasse.png)
 
 A Java s'utilitza la paraula reservada **`extends`** per a indicar herència:
 
@@ -59,24 +59,24 @@ També podem declarar els atributs com **protected**. D'aquesta manera podran se
 
 ## 2.6 Exemple 3
 
-En aquest exemple crearem les classe **Persona** i les seues classes heretades: **Alumne** i **Professor**. En la classe Persona crearem el constructor, un mètode per a mostrar els atributs i els <i>getters</i> i <i>setters</i>. **Les classes Alumne i Professor heretaran de la classe Persona** (utilitzant la paraula reservada `extends`) i cadascuna tindrà els seus propis atributs, un constructor que anomenarà també al constructor de la classe Persona (utilitzant el mètode `super()`), un mètode per a mostrar els seus atributs, que també cridarà al mètode de Persona i els getters i setters. És interessant veure com **s'ha sobreescrit el mètode mostrarPersona() en les classes heretades**. El mètode es diu igual i fa ús de la paraula reservada super per a cridar al mètode de mostrarPersona() de Persona. En la crida del main, tant l'objecte **a** (Alumne) com l'objecte **profe** (Professor) poden fer ús del mètode mostrarPersona().
+En aquest exemple crearem les classe **Persona** i les seues classes heretades: **Alumne** i **Professor**. En la classe Persona crearem el constructor, un mètode per a mostrar els atributs i els <i>getters</i> i <i>setters</i>. **Les classes Alumne i Professor heretaran de la classe Persona** (/utilitzant la paraula reservada `extends`) i cadascuna tindrà els seus propis atributs, un constructor que anomenarà també al constructor de la classe Persona (/utilitzant el mètode `super()`), un mètode per a mostrar els seus atributs, que també cridarà al mètode de Persona i els getters i setters. És interessant veure com **s'ha sobreescrit el mètode mostrarPersona() en les classes heretades**. El mètode es diu igual i fa ús de la paraula reservada super per a cridar al mètode de mostrarPersona() de Persona. En la crida del main, tant l'objecte **a** (Alumne) com l'objecte **profe** (Professor) poden fer ús del mètode mostrarPersona().
 
 ### Persona
 
-![Classe Persona](uf8/classe_persona.jpg)
+![Classe Persona](/uf8/classe_persona.jpg)
 
 ### Alumne
 
-![Classe Alumne](uf8/classe_alumne.jpg)
+![Classe Alumne](/uf8/classe_alumne.jpg)
 
 ### Professor
 
-![Classe Professor](uf8/classe_professor.jpg)
+![Classe Professor](/uf8/classe_professor.jpg)
 
 ### Programa Principal
 
-![Classe Principal](uf8/classe_principal.jpg)
+![Classe Principal](/uf8/classe_principal.jpg)
 
 ### Eixida
 
-![Eixida exemple 3](uf8/eixida.jpg)
+![Eixida exemple 3](/uf8/eixida.jpg)

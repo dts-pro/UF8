@@ -43,21 +43,21 @@ public class Cercle implements Figura {
 
 En aquest exemple crearem una interfície Figura i posteriorment la implementarem en vàries classes. Per a crear una interfície hem de punxar amb el botó dret sobre el paquet on la vulguem crear i després NEW > Java Interface.
 
-![Crear interfície](uf8/Crear_interficie.jpg)
+![Crear interfície](/uf8/Crear_interficie.jpg)
 
 Veurem un exemple simple de definició i ús de interfície a Java. Les classes que usarem i les seues relacions es mostren en l'esquema:
 
-![Esquema exemple 6](uf8/esquema_exemple6.jpg)
+![Esquema exemple 6](/uf8/esquema_exemple6.jpg)
 
-![Classe Figura](uf8/figura.jpg)
+![Classe Figura](/uf8/figura.jpg)
 
-![Exemple6](uf8/exemple6.jpg)
+![Exemple6](/uf8/exemple6.jpg)
 
-![Exemple6 Main](uf8/Exemple6_main.jpg)
+![Exemple6 Main](/uf8/Exemple6_main.jpg)
 
 El resultat d'execució podria ser una cosa així:
 
-![Eixida exemple 6](uf8/eixida_exemple6.jpg)
+![Eixida exemple 6](/uf8/eixida_exemple6.jpg)
 
 En aquest exemple **la interfície Figura defineix un tipus de dada**. Per això podem crear un ArrayList de figures on inserim quadrats, cercles, rectangles, etc. (polimorfisme).
 

@@ -5,10 +5,10 @@ import { withMermaid } from "vitepress-plugin-mermaid";
 // https://vitepress.dev/reference/site-config
 export default withMermaid({
   lang: 'ca-ES',
-  title: 'UF8 - Programació Orientada a Objectes II',
+  title: 'UF8',
   description: 'Descripció',
-  base: '/',
-  outDir: './dist',
+  base: '/UF8/',
+  outDir: '../docs',
   markdown: {
     config(md) {
       md.use(tabsMarkdownPlugin)
@@ -60,8 +60,8 @@ export default withMermaid({
       { text: '📚 Continguts addicionals', items: [
         { text: 'Operador instanceof', link: '/7-add_instanceof' },
         { text: 'Referència this', link: '/8-add_this' },
-        { text: '<img src="/img/logo-gva.png" class="logo-anim" style="vertical-align:middle; height:150px; margin-top:100px;">', link: '' },
-        { text: '<img src="/img/logo-centro.png" class="logo-anim" style="vertical-align:middle; height:150px;">', link: '' }
+        { text: '<img src="img/logo-gva.png" class="logo-anim" style="vertical-align:middle; height:150px; margin-top:100px;">', link: '' },
+        { text: '<img src="img/logo-centro.png" class="logo-anim" style="vertical-align:middle; height:150px;">', link: '' }
       ]}
     ],
     socialLinks: [

@@ -1,0 +1,1 @@
+import{_ as i,c as s,o as a,a4 as r}from"./chunks/framework.DIQKRKrM.js";const u=JSON.parse('{"title":"Objectius","description":"","frontmatter":{},"headers":[],"relativePath":"objectius.md","filePath":"objectius.md"}'),t={name:"objectius.md"};function l(c,e,o,n,d,p){return a(),s("div",null,e[0]||(e[0]=[r("",2)]))}const b=i(t,[["render",l]]);export{u as __pageData,b as default};

@@ -13,9 +13,9 @@ A través de la combinació de **herència** i **sobreescriptura de mètodes**, 
 Anem a provar un exemple senzill però que resumeix tot el que és important del polimorfisme.  
 Anem a crear la classe **Mare** amb un mètode **llamame()**. A continuació, crearem dues classes derivades d'aquesta: **Hija1** i **Hija2**, sobreescrivint el mètode **llamame()**. En el **main**, crearem un objecte de cada classe i els assignarem a una variable de tipus **Mare** (anomenada **madre2**) amb la qual anomenarem al mètode **llamame()** dels tres objectes.  
 
-És important observar que <u>la variable **Mare madre2** es pot assignar a objectes de classe **Hija1** i **Hija2**</u>. Això és <u>possible perquè **Hija1** i **Hija2** també són de tipus **Mare**</u> (a causa de l'herència).
+És important observar que la variable **Mare madre2** es pot assignar a objectes de classe **Hija1** i **Hija2**. Això és possible perquè **Hija1** i **Hija2** també són de tipus **Mare** (a causa de l'herència).
 
-També és important veure que <u>la variable **Mare madre2** cridarà al mètode **llamame()** de la classe de l'objecte al qual fa referència</u> (a causa del polimorfisme).  
+També és important veure que la variable **Mare madre2** cridarà al mètode **llamame()** de la classe de l'objecte al qual fa referència (a causa del polimorfisme).  
 
 Observe's les anomenades **madre2.llamame()** de les línies 36 d'ara en avant:
 

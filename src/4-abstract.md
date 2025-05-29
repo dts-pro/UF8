@@ -4,17 +4,22 @@ Una classe abstracta és **una classe que declara l'existència d'alguns mètode
 
 Una classe abstracta pot contindre tant mètodes abstractes (sense implementar) com no abstractes (implementats). Però almenys un ha de ser abstracte. Per a declarar una classe o mètode com a abstracte s'utilitza el modificador **abstract**.
 
->[!WARNING] <strong>ATENCIÓ!:</strong>
->Una classe abstracta <strong>no es pot instanciar</strong>, però <strong>sí es pot heretar</strong>. Les subclasses hauran d'implementar obligatòriament el codi dels mètodes abstractes (llevat que també es declaren com a abstractes).
+::: warning ATENCIÓ
+**Una classe abstracta no es pot instanciar**, però **sí es pot heretar**. Les subclasses hauran d'implementar obligatòriament el codi dels mètodes abstractes (llevat que també es declaren com a abstractes).
+:::
 
-Les **classes abstractes** <u>són útils quan necessitem definir una forma generalitzada de classe que serà compartida per les subclasses, deixant part del codi en la classe abstracta (mètodes “normals”) i delegant una altra part en les subclasses (mètodes abstractes)</u>.
+Les **classes abstractes** són útils quan necessitem definir una forma generalitzada de classe que serà compartida per les subclasses, deixant part del codi en la classe abstracta (mètodes “normals”) i delegant una altra part en les subclasses (mètodes abstractes).
 
->[!WARNING] <strong>ATENCIÓ!:</strong>
->No poden declarar-se constructors o mètodes estàtics abstractes.
+::: warning ATENCIÓ
+No poden declarar-se constructors o mètodes estàtics abstractes.
+:::
 
 La finalitat principal d'una classe abstracta és crear una classe heretada a partir d'ella. Per això, en la pràctica és obligatori aplicar herència (si no, la classe abstracta no serveix per a res). El cas contrari és una classe final, que no pot heretar-se com ja hem vist. Per tant **una classe no pot ser abstract i final al mateix temps**.
 
 Per exemple, aquesta classe abstracta Principal ten dos mètodes: un concret i un altre abstracte.
+
+::: tabs
+== Java
 
 ```java
 public abstract class Principal {
@@ -27,7 +32,12 @@ public abstract class Principal {
 }
 ```
 
+:::
+
 Aquesta subclasse hereta de Principal tots dos mètodes, però està obligada a implementar el codi del mètode abstracte.
+
+::: tabs
+== Java
 
 ```java
 class Secundària extends Principal {
@@ -37,3 +47,5 @@ class Secundària extends Principal {
   }
 }
 ```
+
+:::

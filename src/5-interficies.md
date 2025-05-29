@@ -11,13 +11,18 @@ Mitjançant la construcció d'una interfície, el o la programadora pretén espe
 
 En una interfície també es poden declarar constants que defineixen el comportament que han de suportar els objectes que vulguen implementar aqueixa interfície. La sintaxi típica d'una interfície és la següent:
 
+::: tabs
+== Java
+
 ```java
 public interface Nom {
   //Declaració d'atributs i mètodes (sense definir codi)
 }
 ```
 
-Si una interfície defineix un tipus però aquest tipus no proveeix cap mètode, podem preguntar-nos: <i>per a què serveixen llavors les interfícies a Java?</i>  
+:::
+
+Si una interfície defineix un tipus però aquest tipus no proveeix cap mètode, podem preguntar-nos: *per a què serveixen llavors les interfícies a Java?*  
 La implementació (herència) d'una interfície no podem dir que evite la duplicitat de codi o que afavorisca la reutilització de codi perquè realment no proveeixen codi.
 
 En canvi, sí que podem dir que reuneix els altres dos avantatges de l'herència: **afavorir el manteniment i l'extensió de les aplicacions.** Per què? **Perquè, en definir interfícies, permetem l'existència de variables polimòrfiques i la invocació polimòrfica de mètodes**.
@@ -31,13 +36,18 @@ Un aspecte fonamental de les interfícies a Java és **separar l'especificació 
 - Una classe que implementa una interfície ha de proporcionar implementació per a tots i cadascun dels mètodes definits en la interfície.
 - Les classes que implementen una interfície que té definides constants poden usar-les en qualsevol part del codi de la classe, simplement indicant el seu nom.
 
-Si per exemple la classe <i>Cercle</i> implementa la interfície <i>Figura</i> la sintaxi seria:
+Si per exemple la classe *Cercle* implementa la interfície *Figura* la sintaxi seria:
+
+::: tabs
+== Java
 
 ```java
 public class Cercle implements Figura {
   ...
 }
 ```
+
+:::
 
 ## 5.1 Exemple 6
 

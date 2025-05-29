@@ -193,7 +193,7 @@ Crea una classe ProgramaFiguras amb un main en el qual realitzar les següents p
 6. Escala totes les figures amb escala = 0.1.
 7. Mostra de nou la informació de totes les figures.
 
-## EXERCICI 8 - CAS PRÀCTIC DAWBANK
+## Exercici 8 - Cas pràctic DawBank
 
 L'empresa <i>LibreCoders</i> us ha contractat per desenvolupar un programari de gestió d'un compte bancari per a la cooperativa de banca ètica i sostenible DawBank. Es tracta d'una aplicació Java formada per una classe principal DawBank i una altra anomenada CompteBancari.
 

@@ -25,6 +25,9 @@ Tot i que `instanceof` és una eina poderosa, cal utilitzar-la amb precaució pe
 
 Exemple bàsic:
 
+::: tabs
+== Java
+
 ```java
 class Animal {}
 
@@ -43,9 +46,14 @@ public class ExempleInstanceof {
 }
 ```
 
+:::
+
 ## 4.2. Exemple 2
 
 L'operador també funciona amb interfícies i classes abstractes.
+
+::: tabs
+== Java
 
 ```java
 interface Mascota {}
@@ -60,14 +68,21 @@ public class ExempleInterficie {
 }
 ```
 
+:::
+
 ## 4.3. Exemple 3
 
 Quan **instanceof** es fa servir amb una referència null, sempre retorna false.
+
+::: tabs
+== Java
 
 ```java
 Gos g = null;
 System.out.println(g instanceof Gos); // false
 ```
+
+:::
 
 ## 4.4. Exemple 4
 

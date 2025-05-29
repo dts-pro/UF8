@@ -16,6 +16,9 @@ La composició crea una relació **'té'** o **'està compost per'**.
 
 Un compte bancari té un titular i un o més autoritzats (tots són persones amb DNI, nom, adreça, telèfon, etc.). A més del saldo, el compte està compost per una sèrie de moviments (cada moviment té associats un tipus, una data, una quantitat, un concepte, un origen o una destinació, etc.). La diferència és que, si el compte desapareix, les persones poden continuar sent clients del banc, tenir altres comptes o passar a formar part del personal del banc. En canvi, els moviments només tenen sentit per a eixe compte concret, de manera que, si el compte desapareix, aquests moviments perden el seu valor.
 
+::: tabs
+== Java
+
 ```java
 public class CompteBancari {
   Persona titular;
@@ -36,3 +39,5 @@ public class Moviment {
   ...
 }
 ```
+
+:::

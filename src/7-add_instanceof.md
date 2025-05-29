@@ -88,6 +88,9 @@ System.out.println(g instanceof Gos); // false
 
 L'operador **instanceof** s'utilitza sovint per comprovar el tipus d'objecte abans de fer un cast segur:
 
+::: tabs
+== Java
+
 ```java
 public class ExempleCasting {
     static void comprovarAnimal(Animal a) {
@@ -109,9 +112,15 @@ public class ExempleCasting {
 }
 ```
 
+:::
+
 ## 4.5. Exemple complet
 
-**1. Interfície `Electric`**
+:::: tabs
+=== Java
+
+::: tabs
+== Electric.java
 
 ```java
 // Interfície per a vehicles elèctrics
@@ -120,7 +129,7 @@ public interface Electric {
 }
 ```
 
-**2. Classe `Vehicle`**
+== Vehicle.java
 
 ```java
 // Classe base Vehicle
@@ -139,7 +148,7 @@ abstract class Vehicle {
 }
 ```
 
-**3. Classe `Cotxe`**
+== Cotxe.java
 
 ```java
 // Classe Cotxe que hereta de Vehicle
@@ -158,7 +167,7 @@ class Cotxe extends Vehicle {
 }
 ```
 
-**4. Classe `Moto`**
+== Moto.java
 
 ```java
 // Classe Moto que hereta de Vehicle
@@ -177,7 +186,7 @@ class Moto extends Vehicle {
 }
 ```
 
-**5. Classe `Camio`**
+== Camio.java
 
 ```java
 // Classe Camió que hereta de Vehicle i implementa Electric
@@ -201,7 +210,7 @@ class Camio extends Vehicle implements Electric {
 }
 ```
 
-**6. Classe principal `Aparcament`**
+== Classe principal
 
 ```java
 // Classe principal amb ús de instanceof
@@ -225,3 +234,6 @@ public class Aparcament {
     }
 }
 ```
+
+:::
+::::

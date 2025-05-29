@@ -43,9 +43,7 @@ Defineix un mètode, que donat un objecte del sistema solar (planeta o satèl·l
 
 El diagrama UML seria:
 
-<div style="border: 6px solid rgb(240, 102, 61); display: inline-block; max-width: 80%;">
-    <img src="/uf8/Exercici_Astros.jpg" style="max-width: 100%; height: auto;" alt="Esquema d'herència">
-</div>
+![Esquema d'herència](/uf8/Exercici_Astros.jpg)
 
 Una possible solució seria crear una llista d'objectes, inserir els planetes i satèl·lits (directament mitjançant codi o sol·licitant-los per pantalla) i després mostrar un xicotet menú que permeta a l'usuari imprimir la informació de l'astre que trie.
 
@@ -61,7 +59,7 @@ Aquesta classe ha de complir amb els següents requisits:
   - Mostrar la llista d'animals (sols tipus i nom, 1 línia per animal).
   - Mostrar totes les dades d'un animal concret.
   - Mostrar totes les dades de tots els animals.
-  - Insertar animals en l’inventari.
+  - Inserir animals en l’inventari.
   - Eliminar animals de l'inventari.
   - Buidar l'inventari.
 
@@ -69,9 +67,7 @@ Implementa les altres classes necessàries per a la classe Inventari.
 
 El diagrama UML seria:
 
-<div style="border: 6px solid rgb(240, 102, 61); display: inline-block; max-width: 80%;">
-    <img src="/uf8/Exercici_Mascotes.jpg" style="max-width: 100%; height: auto;" alt="Esquema d'herència">
-</div>
+![Esquema d'herència](/uf8/Exercici_Mascotes.jpg)
 
 ## Exercici 4 – Banc
 
@@ -101,9 +97,7 @@ Implementa una classe principal amb funció main per a provar el funcionament de
 
 El diagrama UML seria:
 
-<div style="border: 6px solid rgb(240, 102, 61); display: inline-block; max-width: 80%;">
-    <img src="/uf8/Exercici_Banc.jpg" style="max-width: 100%; height: auto;" alt="Esquema d'herència">
-</div>
+![Esquema d'herència](/uf8/Exercici_Banc.jpg)
 
 ## Exercici 5 – Empresa i empleats
 

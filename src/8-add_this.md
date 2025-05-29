@@ -12,6 +12,9 @@ Ací és on entra en joc **this**, per indicar que ens referim a l'atribut de la
 
 **Exemple**:
 
+::: tabs
+== Java
+
 ```java
 class Cotxe {
     private String marca;
@@ -26,6 +29,8 @@ class Cotxe {
 }
 ```
 
+:::
+
 Sense **this**, la línia `marca = marca;` assignaria el valor de la variable local marca a si mateixa, deixant l'atribut marca sense modificar.
 
 ## 2. Cridar un altre constructor dins la mateixa classe (this())
@@ -33,6 +38,12 @@ Sense **this**, la línia `marca = marca;` assignaria el valor de la variable lo
 Java permet definir constructors sobrecarregats, és a dir, **múltiples constructors amb diferents conjunts de paràmetres**. Per evitar duplicació de codi, es pot cridar un constructor des d'un altre utilitzant `this()`.
 
 **Exemple**:
+
+:::: tabs
+=== Java
+
+::: tabs
+== Cotxe.java
 
 ```java
 class Cotxe {
@@ -54,8 +65,11 @@ class Cotxe {
         System.out.println("Marca: " + marca + ", Any: " + any);
     }
 }
+```
 
-// Exemple d'ús
+== Classe Principal
+
+```java
 public class Main {
     public static void main(String[] args) {
         Cotxe c1 = new Cotxe("Toyota");
@@ -64,6 +78,9 @@ public class Main {
 }
 ```
 
+:::
+::::
+
 Aquesta ús de `this` evita duplicació de codi: en compte d'assignar manualment els atributs en cada constructor, es reutilitza la lògica existent. A més, millora la mantenibilitat: si es canvia la implementació d'un constructor, no caldrà modificar diversos constructors manualment.
 
 ## 3. Retornar l'objecte actual (this) en mètodes encadenats
@@ -71,6 +88,12 @@ Aquesta ús de `this` evita duplicació de codi: en compte d'assignar manualment
 L'ús de **this** per retornar l'objecte actual permet que els mètodes es puguen encadenar en una sola línia. Aquesta tècnica, coneguda com method chaining, millora la llegibilitat del codi i és àmpliament utilitzada en frameworks i llibreries modernes.
 
 **Exemple**:
+
+:::: tabs
+=== Java
+
+::: tabs
+== Cotxe.java
 
 ```java
 class Cotxe {
@@ -91,8 +114,11 @@ class Cotxe {
         System.out.println("Marca: " + marca + ", Any: " + any);
     }
 }
+```
 
-// Exemple d'ús
+== Classe principal
+
+```java
 public class Main {
     public static void main(String[] args) {
         Cotxe c = new Cotxe().setMarca("Honda").setAny(2023);
@@ -100,6 +126,9 @@ public class Main {
     }
 }
 ```
+
+:::
+::::
 
 Així evitem crides repetitives: no cal assignar cada valor per separat.
 
@@ -109,13 +138,23 @@ De vegades, volem passar l'objecte actual a un altre mètode o classe perquè aq
 
 **Exemple**:
 
+:::: tabs
+=== Java
+
+::: tabs
+== Client.java
+
 ```java
 class Client {
     public void mostrarCotxe(Cotxe cotxe) {
         System.out.println("Cotxe: " + cotxe);
     }
 }
+```
 
+== Cotxe.java
+
+```java
 class Cotxe {
     private String marca;
 
@@ -132,8 +171,11 @@ class Cotxe {
         return "Marca: " + marca;
     }
 }
+```
 
-// Exemple d'ús
+== Classe principal
+
+```java
 public class Main {
     public static void main(String[] args) {
         Client client = new Client();
@@ -144,8 +186,11 @@ public class Main {
 }
 ```
 
+:::
+::::
+
 És útil per dos motius principals: en primer lloc, permet passar l'objecte actual sense necessitat de crear referències addicionals. I, en segon lloc, es pot utilitzar en dissenys on una classe treballa amb instàncies d'una altra.
 
->[!WARNING] <strong>ATENCIÓ!:</strong>
->**No es pot utilitzar `this` dins d'un mètode static** perquè **this** fa referència a l'objecte actual, i els mètodes static pertanyen a la classe en lloc d'una instància concreta.
-
+::: warning ATENCIÓ
+**No es pot utilitzar `this` dins d'un mètode static** perquè **this** fa referència a l'objecte actual, i els mètodes static pertanyen a la classe en lloc d'una instància concreta.
+:::
